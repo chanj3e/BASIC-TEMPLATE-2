@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: black;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 19%;
+    height: 100%;
+    position: fixed;
+    padding: 10px 0 10px 3%;
+}
+a {
+    color: white;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 24px;
+}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+}
+.nav-links a {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    padding: 8px 25px 8px 8px;
+    width: fit-content;
+}
+.nav-links a:first-child {
+    padding: 8px;
+}
+.nav-links a i {
+    /* font-weight: 600; */
+    font-size: 3rem;
+}
+.nav-links span {
+    margin-left: 15px;
+}
+.nav-links a:hover, .main-account a:hover, .tweet-icons i:hover {
+    background-color: rgb(41, 51, 54);
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+.button-post {
+    background-color: rgb(29, 155, 240);
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    color: white;
+    width: 90%;
+    font-weight: 700;
+    height: 55px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.button-post:hover {
+    background-color: rgba(29, 155, 240,0.9);
+}
+.main-account {
+    width: 100%;
+    height: 20%;
+    margin-top: 75px;
+}
+.main-account a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    padding: 8px 10px 8px 15px;
+    margin-right: 10px;
+}
+.account-details {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    line-height: 20px;
+}
+.user-pic {
+    width: 38px;
+    height: 38px;
+    background-color: black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.account-handle {
+    color: rgb(110, 118, 125);
+}
+.account-name {
+    font-weight: 700;
+}
+main {
+    width: 81%;
+    height: 100%;
+    margin-left: 19%;
+}
+.main-flex {
+    display: flex;
+    width: 100%;
+}
+.main-feed {
+    width: 60%;
+    border-left: 1px solid rgb(41, 51, 54);
+    border-right: 1px solid rgb(41, 51, 54);
+}
+.home-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0 16px;
+    height: 55px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+.new-tweet {
+    display: flex;
+    width: 100%;
+    padding: 4px 16px;
+    height: 120px;
+}
+.new-tweet .user-pic {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+.new-tweet-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 4px;
+    width: 100%;
+    margin-left: 12px;
+}
+.new-tweet-details input {
+    width: 100%;
+    height: 24px;
+    background-color: black;
+    font-size: 2rem;
+    border: none;
+    color: white;
+    outline: none;
+}
+.new-tweet-details input:hover {
+    background-color: rgb(41, 51, 54);
+}
+.under-new-tweet-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+.under-new-tweet-details ul {
+    display: flex;
+    list-style: none;
+}
+.under-new-tweet-details li {
+    margin-left: 12px;
+    color: #1c88d2;
+    cursor: pointer;
+}
+.under-new-tweet-details .button-post {
+    width: 75px;
+    height: 35px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.feed-tweet {
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    padding: 12px 16px 0 16px;
+    border-top: 1px solid rgb(41, 51, 54);
+    cursor: pointer;
+    /* border-bottom: 1px solid rgb(41, 51, 54);     */
+}
+.feed-tweet-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    width: 100%;
+}
+.tweeter-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.tweeter-handle, .feed-tweet-details i {
+    color: rgb(110, 118, 125);
+}
+.tweet-text {
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 8px 0;
+    width: 100%;
+}
+.tweet-icons {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    margin: 15px 0;
+    width: 100%;
+}
+.side-feed {
+    width: 40%;
+    /* margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+    padding: 0 2%;
+}
+.search {
+    display: flex;
+    position: sticky;
+    top: 0;
+    margin-top: 8px;
+    height: 55px;
+    max-width: 355px;
+}
+.search input {   
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    /* height: 38px; */
+    width: 100%;
+    border: none;
+    background-color: rgb(41, 51, 54);
+    text-align: center;
+}
+.trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(41, 51, 54);
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 15px;
+    color: rgb(110, 118, 125);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /* width: 100%; */
+    margin-top: 15px;
+    max-width: 355px;
+}
+.trending h1, .follow h1 {
+    color: white;
+}
+.trends {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  
+}
+.trends:hover, .show-more:hover {
+    background-color: rgb(51, 61, 64);
+    cursor: pointer;
+}
+.trends-place {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.trend-name {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: white;
+}
+.show-more {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 1.5rem;
+    width: 100%;
+    color: #1c88d2;
+    padding: 15px 0;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(41, 51, 54);
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 15px;
+    color: rgb(110, 118, 125);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /* width: 100%; */
+    margin-top: 15px;
+    max-width: 355px;
+}
+.users-accounts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 30x 15px;
+    width: 100%;
+    height: 70px;
+}
+.users-accounts-cont {
+    display: flex;
+    justify-content: space-between;
+}
+.users-accounts .user-pic {
+    margin: 0;
+}
+.users-accounts-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.users-accounts-details a {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.users-accounts-details a:hover {
+    text-decoration: underline;
+}
+
+.users-accounts .account-name {
+    color: white;
+}
+.follow-buttom {
+    width: 75px;
+    height: 35px;
+    font-weight: 600;
+    margin: 0 0 0 12px;
+    text-align: center;
+    background-color: white;
+    color: rgb(41, 51, 54);
+    border: none;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+/* mobile screen  */
+
+@media  screen and (max-width: 767px) {
+    
+}
+/* small screen  */
+
+@media  screen and (min-width: 768px) {
+    
+}
+/* medium screen  */
+
+@media  screen and (min-width: 992px) {
+    
+}
+/* large screen  */
+
+@media  screen and (min-width: 1200px) {
+    
+}
